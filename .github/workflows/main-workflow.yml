@@ -9,5 +9,5 @@ jobs:
   call-reusable-workflow:
     uses: Stam13/exampleStam/.github/workflows/reusable-workflow.yml@main
     with:
-      name: 'Github User'
+      name: ${{ github.actor }}
       run-tests: true
