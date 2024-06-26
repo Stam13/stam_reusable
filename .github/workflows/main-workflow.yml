@@ -1,0 +1,13 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable-workflow:
+    uses: Stam13/exampleStam/.github/workflows/reusable-workflow.yml@main
+    with:
+      name: 'Github User'
+      run-tests: true
